@@ -167,15 +167,17 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
       var span = document.getElementsByClassName("close")[0];
       var span1 = document.getElementsByClassName("close")[1];
 
-      window.onload = function () {
-        if(hash == "succes") { 
-         modal1.style.display = "block";
-        }
-      }
+      
 
       // When the user clicks on the button, open the modal 
       btn.onclick = function () {
         modal.style.display = "block";
+      }
+
+      window.onclick = function () {
+        if(hash == "succes") { 
+         modal1.style.display = "block";
+        }
       }
 
       // When the user clicks on <span> (x), close the modal
