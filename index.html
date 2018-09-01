@@ -174,11 +174,12 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
         modal.style.display = "block";
       }
 
-       function success() {
-        if(hash == "succes") { 
-         modal1.style.display = "block";
-        }
-      }
+      window.onhashchange = function( { 
+          switch(location.hash) { 
+              case '#succes': 
+                    modal1.style.display = "block";
+                    break;
+           } }
 
       // When the user clicks on <span> (x), close the modal
       span.onclick = function () {
