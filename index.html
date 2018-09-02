@@ -99,7 +99,7 @@
         <br>
       </div>
       <div class="w3-col m6">
-        <form name='Contact' netlify  action="/index.html#succes">
+        <form name='Contact' netlify action="/index.html#succes">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
               <input class="w3-input w3-border" type="text" placeholder="Naam" required name="Name">
@@ -144,94 +144,94 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
       <span class="close">&times;</span>
       <img src="snap.jpg" Width="100%" Height="80%">
     </div>
-  </div>  
-    
-<div id="myModal1" class="modal">
+  </div>
+
+  <div id="myModal1" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
       <p>Uw bericht is succesvol verzonden, er wordt zo spoedig mogelijk contact met u opgenomen!</p>
     </div>
-</div>
+  </div>
 
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script>
-      // Get the modal
-      var modal = document.getElementById('myModal');
-      var modal1 = document.getElementById('myModal1');
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    // Get the modal
+    var modal0 = document.getElementById('myModal');
+    var modal1 = document.getElementById('myModal1');
 
-      // Get the button that opens the modal
-      var btn = document.getElementById("myBtn");
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
 
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-      var span1 = document.getElementsByClassName("close")[1];
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    var span1 = document.getElementsByClassName("close")[1];
 
-      
 
-      // When the user clicks on the button, open the modal 
-      btn.onclick = function () {
-        modal.style.display = "block";
+
+    // When the user clicks on the button, open the modal 
+    btn.onclick = function () {
+      modal0.style.display = "block";
+    }
+
+    window.onload = function () {
+      if (location.hash === "#succes") {
+        modal1.style.display = "block";
       }
+    }
 
-      window.onload = function() {
-        if (location.hash === "#succes") {
-              modal1.style.display = "block";
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal0.style.display = "none";
+    }
+    span1.onclick = function () {
+      modal1.style.display = "none";
+      // remove fragment as much as it can go without adding an entry in browser history:
+      window.location.replace("#");
+
+      // slice off the remaining '#' in HTML5:    
+      if (typeof window.history.replaceState == 'function') {
+        history.replaceState({}, '', window.location.href.slice(0, -1));
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal || event.target == modal1) {
+        if (modal0.style.display == "block") {
+          modal0.style.display = "none";
+        } else {
+          modal1.style.display = "none";
+          // remove fragment as much as it can go without adding an entry in browser history:
+          window.location.replace("#");
+
+          // slice off the remaining '#' in HTML5:    
+          if (typeof window.history.replaceState == 'function') {
+            history.replaceState({}, '', window.location.href.slice(0, -1));
           }
+        }
       }
+    }
 
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+      if (event.target == modal) {
         modal.style.display = "none";
       }
-      span1.onclick = function () {
-        modal1.style.display = "none";
-        // remove fragment as much as it can go without adding an entry in browser history:
-        window.location.replace("#");
+    }
 
-        // slice off the remaining '#' in HTML5:    
-        if (typeof window.history.replaceState == 'function') {
-          history.replaceState({}, '', window.location.href.slice(0, -1));
-        }
-      }
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if (event.target == modal || event.target == modal1) {
-          if (modal.style.display == "block") {
-            modal.style.display = "none";
-          } else {
-            modal1.style.display = "none";
-            // remove fragment as much as it can go without adding an entry in browser history:
-            window.location.replace("#");
-
-            // slice off the remaining '#' in HTML5:    
-            if (typeof window.history.replaceState == 'function') {
-              history.replaceState({}, '', window.location.href.slice(0, -1));
-            }
-          }
-        }
-      }
-
-      // Used to toggle the menu on small screens when clicking on the menu button
-      function myFunction() {
-          var x = document.getElementById("navDemo");
-          if (x.className.indexOf("w3-show") == -1) {
-              x.className += " w3-show";
-          } else { 
-              x.className = x.className.replace(" w3-show", "");
-          }
-      }
-      // When the user clicks anywhere outside of the modal, close it
-      var modal = document.getElementById('ticketModal');
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-
-    </script>
+  </script>
 
 </body>
 
