@@ -144,6 +144,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
       <span class="close">&times;</span>
       <img src="snap.jpg" Width="100%" Height="80%">
     </div>
+  </div>  
     
 <div id="myModal1" class="modal">
 
@@ -152,6 +153,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
       <span class="close">&times;</span>
       <p>Uw bericht is succesvol verzonden, er wordt zo spoedig mogelijk contact met u opgenomen!</p>
     </div>
+</div>
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
@@ -173,7 +175,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
         modal.style.display = "block";
       }
 
-      function HashHandler() {
+      window.onhashchange = function() {
         if (location.hash === "#succes") {
               modal1.style.display = "block";
           }
@@ -194,8 +196,6 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
           modal1.style.display = "none";
         }
       }
-
-      window.addEventListener("hashchange", HashHandler, false);
 
     </script>
 
