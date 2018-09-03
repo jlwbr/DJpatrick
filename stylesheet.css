@@ -1,3 +1,15 @@
+@keyframes slideFromTop{
+    0%{
+        transform: translateY(-1000%);
+    }
+    80%{
+        transform: translateY(75%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -37,3 +49,17 @@
     cursor: pointer;
 }
 
+.banner h1{
+    display: block;
+    width: 100vw;
+    margin-top: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    animation: 1s ease slideFromTop;
+    color: white;
+    text-shadow: 3px 3px rgba(0,0,0,0.6);
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+    text-align: center;
+    z-index: -1;
+}
