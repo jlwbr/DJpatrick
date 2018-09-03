@@ -52,7 +52,7 @@
 .banner h1{
     display: block;
     width: 100vw;
-    margin-top: 40vh;
+    margin-top: 0vh;
     margin-left: auto;
     margin-right: auto;
     animation: 1s ease slideFromTop;
