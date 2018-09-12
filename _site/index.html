@@ -1,8 +1,3 @@
----
-gallery:
-    - image: slider_01.jpg
----
-
 <!DOCTYPE html>
 <html>
 <title>DeeJay Patrick</title>
@@ -51,8 +46,9 @@ gallery:
 
   <!-- Page content -->
   <div class="w3-content banner" style="max-width:2000px;margin-top:46px" id="home">
-    
-    <img src="CDJ_DJM_350_CONFIG_BLK.jpg" width="100%" alt="" style="z-index: -1; height: vh;  filter: grayscale(100%);">
+
+    <img src="CDJ_DJM_350_CONFIG_BLK.jpg" width="100%" alt="" style="z-index: -1; filter: grayscale(100%);">
+
       <h1>DeeJay Patrick</h1>
 
   </div>
@@ -63,30 +59,18 @@ gallery:
       <p class="w3-opacity">
         <em>DeeJay Patrick</em>
       </p>
-
+      <img src="pp.jpg" style="float: right; margin: 20px;" Width="160px" Height="160px">
       <p class="w3-justify">
 
-        Ik ben DeeJay Patrick, een enthousiaste allround DJ.
-          <br><br>Op mijn 11e jaar begon de liefde voor het vak als DJ al snel te groeien.
-          Ik kocht mijn alle eerste "DJ-Set" - althans, ik vond het heel wat - bestaande uit een mixer en een oude versterker 
-          met 2 homesound speakers.
-          Daarna ben ik blijven uitbereiden en oefenen. 
-          
-          <br><br>Op een gegeven moment heb ik me mogen aansluiten bij een Licht & Geluid
-          groep op school.
-          Daar heb ik veel mogen leren en ben ik met nog meer plezier plaatjes gaan draaien.
-          
-          <br><br>Inmiddels ben ik 16 jaar en mag ik trotse eigenaar zijn van een professionele set!
-          Vanaf die dag wil ik graag anderen laten horen hoe mooi muziek kan zijn!
-          
-          <br>
+        <center>Ik ben DeeJay Patrick, een enthousiaste allround DJ, geboren op 05-06-2002 (16).
           <br> Mijn draaistijl is een opzwepende mix tussen alle bekende hits van House en top 40 tot Nederlandstalige feestmuziek
           en Rap, ik weet wat de mensen willen horen!
           <br>
           <br> Ik ben inzetbaar voor vrijwel alle feesten.
+
           <br> Feestcafés, verjaardagsfeesten, bedrijfsevenementen of bruiloften enz.
-        
-        <br><br>Meer info? <a href="#contact" class="onclick="myFunction()">Klik hier!</a>
+          <br>
+          <br> Met DeeJay Patrick is het gegarandeerd FEEST!!</center>
       </p>
     </div>
 
@@ -101,15 +85,18 @@ gallery:
           <!-- Galerij invoegen foto's -->
           <div class="gallery">
               <div id="gallery">
-                  {% for slides in page.gallery %}
-                  <a href="{{ slides.image }}">
-                      <img src="{{ slides.image }}" width="300" height="200"/>
+                  
+                  <a href="slider_01.jpg">
+                      <img src="slider_01.jpg" width="300" height="200"/>
                   </a>
-                  {% endfor %}
+                  
               </div>
           </div>
+
         </p>
         <br>
+
+
       </div>
     </div>
   </div>
@@ -140,7 +127,7 @@ gallery:
               <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
             </div>
           </div>
-          <input style="" class="w3-input w3-border" type="text" placeholder="Bericht" required name="Message">
+          <input class="w3-input w3-border" type="text" placeholder="Bericht" required name="Message">
           <button class="w3-button w3-black w3-section w3-right" type="submit">Verstuur</button>
         </form>
       </div>
@@ -181,7 +168,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <p>Uw bericht is succesvol verzonden, ik neem zo spoedig mogelijk contact met u op!</p>
+      <p>Uw bericht is succesvol verzonden, er wordt zo spoedig mogelijk contact met u opgenomen!</p>
     </div>
   </div>
 

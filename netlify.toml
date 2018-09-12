@@ -1,0 +1,6 @@
+[Settings]
+ID = "8a0f0c25-2a82-4bfb-988b-65e34a3fec6d"
+
+[build]
+  publish = "_site/"
+  command = "bundle exec jekyll build"
