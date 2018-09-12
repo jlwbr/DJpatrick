@@ -10,14 +10,14 @@ collections:
       delete: false # Prevent users from deleting documents in this collection
       editor:
           preview: false
-          files:
-              - name: "Home"
-                label: "Home Gallerij"
-                file: "index.html"
-                description: "Gallerij voor de home pagina"
-                fields:
-                    - label: "Gallerij"
-                      name: "gallery"
-                      widget: "list"
-                      field:
-                          - {label: Image, name: image, widget: image}
+      files:
+          - name: "Home"
+            label: "Home Gallerij"
+            file: "index.html"
+            description: "Gallerij voor de home pagina"
+            fields:
+                - label: "Gallerij"
+                  name: "gallery"
+                  widget: "list"
+                  field:
+                      - {label: Image, name: image, widget: image}
